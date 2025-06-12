@@ -41,11 +41,11 @@ const getUserCredits = async (req, res) => {
 		const credits = await creditService.getUserCreditservice(userId);
 
 		if (!credits || credits.length === 0) {
-			return res.status(404).json({ message: 'No credit transactions found for this user.',credit:0 });
+            return res.status(200).json({ message: 'No credit transactions found for this user.', totalCredits:0 });
 		}
         const totalCredits = credits.reduce((acc, credit) => acc + credit.amount, 0);
         if (totalCredits <= 0) {
-            return res.status(404).json({ message: 'No credits available for this user.',credit:0 });
+            return res.status(200).json({ message: 'No credits available for this user.', totalCredits:0 });
         }
 		return res.status(200).json({ userId,totalCredits, credits });
 	} catch (error) {
