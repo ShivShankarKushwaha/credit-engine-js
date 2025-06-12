@@ -1,5 +1,5 @@
 ### Get Credit Status
-GET https://credit-engine-new.vercel.app/api/credits/684a67ffcc63d1f8efd93acc
+GET https://credit-engine-new.vercel.app/api/credits/684a721869cdd79c901929d7
 Accept: application/json
 
 ### Issue Credit
@@ -7,7 +7,7 @@ POST https://credit-engine-new.vercel.app/api/credits
 Content-Type: application/json
 
 {
-    "userId": "684a67ffcc63d1f8efd93acc",
+    "userId": "684a721869cdd79c901929d7",
     "actionType": "spendMultiplier",
     "amount": 75,
     "metadata": {
@@ -33,7 +33,7 @@ POST https://credit-engine-new.vercel.app/api/credits
 Content-Type: application/json
 
 {
-    "userId": "6849543491cc67a1f195bffe",
+    "userId": "684a721869cdd79c901929d7",
     "actionType": "invalidAction",
     "amount": 50
 }
@@ -43,7 +43,7 @@ POST https://credit-engine-new.vercel.app/api/credits
 Content-Type: application/json
 
 {
-    "userId": "6849543491cc67a1f195bffe"
+    "userId": "684a721869cdd79c901929d7"
 }
 
 ### Register User
@@ -51,8 +51,8 @@ POST https://credit-engine-new.vercel.app/api/user/signup
 Content-Type: application/json
 
 {
-    "name": "testuser5",
-    "email": "test5@example.com",
+    "name": "testuser100",
+    "email": "test100@example.com",
     "password": "dfsdfgadfer"
 }
 
