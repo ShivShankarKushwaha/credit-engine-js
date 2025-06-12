@@ -1,0 +1,71 @@
+### Get Credit Status
+GET http://localhost:3000/api/credits/684a67ffcc63d1f8efd93acc
+Accept: application/json
+
+### Issue Credit
+POST http://localhost:3000/api/credits
+Content-Type: application/json
+
+{
+    "userId": "684a67ffcc63d1f8efd93acc",
+    "actionType": "spendMultiplier",
+    "amount": 75,
+    "metadata": {
+        "moduleName": "testModule",
+        "progress": "completed"
+    }
+}
+
+### Enroll User
+POST http://localhost:3000/api/enroll
+Content-Type: application/json
+
+{
+    "name": "testuser4",
+    "email": "test4@example.com",
+    "role":"student",
+    "password": "pacdsfsd23ewe"
+}
+
+
+### Issue Credit (Invalid Action Type)
+POST http://localhost:3000/api/credits
+Content-Type: application/json
+
+{
+    "userId": "6849543491cc67a1f195bffe",
+    "actionType": "invalidAction",
+    "amount": 50
+}
+
+### Issue Credit (Missing Data)
+POST http://localhost:3000/api/credits
+Content-Type: application/json
+
+{
+    "userId": "6849543491cc67a1f195bffe"
+}
+
+### Register User
+POST http://localhost:3000/api/user/signup
+Content-Type: application/json
+
+{
+    "name": "testuser5",
+    "email": "test5@example.com",
+    "password": "dfsdfgadfer"
+}
+
+### Login User
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "test5@example.com",
+    "password": "dfsdfgadfer"
+}
+
+### Get User profile after login
+GET http://localhost:3000/api/user/profile
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
