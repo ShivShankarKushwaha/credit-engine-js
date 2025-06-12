@@ -45,8 +45,8 @@ A lightweight API designed to issue and track "thank-you" credits for various ec
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/ShivShankarKushwaha/credit-engine
-    cd credit-engine
+    git clone https://github.com/ShivShankarKushwaha/credit-engine-js
+    cd credit-engine-js
     ```
 
 2.  **Install dependencies:**
