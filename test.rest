@@ -1,9 +1,9 @@
 ### Get Credit Status
-GET http://localhost:3000/api/credits/684a67ffcc63d1f8efd93acc
+GET https://credit-engine-new.vercel.app/api/credits/684a67ffcc63d1f8efd93acc
 Accept: application/json
 
 ### Issue Credit
-POST http://localhost:3000/api/credits
+POST https://credit-engine-new.vercel.app/api/credits
 Content-Type: application/json
 
 {
@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ### Enroll User
-POST http://localhost:3000/api/enroll
+POST https://credit-engine-new.vercel.app/api/enroll
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 
 
 ### Issue Credit (Invalid Action Type)
-POST http://localhost:3000/api/credits
+POST https://credit-engine-new.vercel.app/api/credits
 Content-Type: application/json
 
 {
@@ -39,7 +39,7 @@ Content-Type: application/json
 }
 
 ### Issue Credit (Missing Data)
-POST http://localhost:3000/api/credits
+POST https://credit-engine-new.vercel.app/api/credits
 Content-Type: application/json
 
 {
@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 
 ### Register User
-POST http://localhost:3000/api/user/signup
+POST https://credit-engine-new.vercel.app/api/user/signup
 Content-Type: application/json
 
 {
@@ -57,7 +57,7 @@ Content-Type: application/json
 }
 
 ### Login User
-POST http://localhost:3000/api/user/login
+POST https://credit-engine-new.vercel.app/api/user/login
 Content-Type: application/json
 
 {
@@ -66,6 +66,6 @@ Content-Type: application/json
 }
 
 ### Get User profile after login
-GET http://localhost:3000/api/user/profile
+GET https://credit-engine-new.vercel.app/api/user/profile
 Accept: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.Njg0OTU0MzQ5MWNjNjdhMWYxOTViZmZl.-CANQoEstzzxbqdLzdLPyyxFQM1cMvDjA30NErhAvRE
